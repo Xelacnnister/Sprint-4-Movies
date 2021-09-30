@@ -1,3 +1,6 @@
+//to run the tests:
+//npm run test:watch
+
 // Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
   let result =  array.map( obj => {return obj["director"]});
@@ -7,7 +10,9 @@ function getAllDirectors(array) {
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
- 
+  let result = array.filter(obj => { return obj["director"] === director});
+  console.log("EXERCICE 2 ->", result);
+  return result;
 }
 
 // Exercise 3: Calculate the average of the films of a given director.
