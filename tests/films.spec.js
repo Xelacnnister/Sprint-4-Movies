@@ -98,7 +98,7 @@ describe.only('Function "getMoviesFromDirector"', () => {
 });
 
 // Exercise 3
-describe('Function "moviesAverageOfDirector"', () => {
+describe.only('Function "moviesAverageOfDirector"', () => {
   it('should be declared', () => {
     expect(typeof moviesAverageOfDirector).toBe('function');
   });
