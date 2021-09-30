@@ -139,7 +139,7 @@ describe.only('Function "moviesAverageOfDirector"', () => {
 });
 
 // Exercise 4
-describe('Function "orderAlphabetically"', () => {
+describe.only('Function "orderAlphabetically"', () => {
   it('should be declared', () => {
     expect(typeof orderAlphabetically).toBe('function');
   });
