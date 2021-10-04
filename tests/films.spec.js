@@ -247,7 +247,7 @@ describe.only('Function "orderAlphabetically"', () => {
 });
 
 // Exercise 5
-describe('Function "orderByYear"', () => {
+describe.only('Function "orderByYear"', () => {
   it('should be declared', () => {
     expect(typeof orderByYear).toBe('function');
   });
