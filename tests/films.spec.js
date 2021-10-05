@@ -287,7 +287,7 @@ describe.only('Function "orderByYear"', () => {
 });
 
 // Exercise 6
-describe('Function "moviesAverageByCategory"', () => {
+describe.only('Function "moviesAverageByCategory"', () => {
   it('should be declared', () => {
     expect(typeof moviesAverageByCategory).toBe('function');
   });
