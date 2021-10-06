@@ -355,7 +355,7 @@ describe.only('Function "moviesAverageByCategory"', () => {
 });
 
 // Exercise 7
-describe('Function "hoursToMinutes"', () => {
+describe.only('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
     expect(typeof hoursToMinutes).toBe('function');
   });
