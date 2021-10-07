@@ -51,7 +51,7 @@ function moviesAverageByCategory(movies, genre) {
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes(movies) {
-  const newMovies =JSON.parse(JSON.stringify( movies));
+  const newMovies = JSON.parse(JSON.stringify( movies));
 
   const hourSplitter = (elemToSplit) => elemToSplit.toString().split("h", 1);
   const minuteSplitter = (elemToSplit) => elemToSplit .toString().split(" ").pop().split("min", 1);
@@ -72,8 +72,21 @@ function hoursToMinutes(movies) {
 }
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
+function bestFilmOfYear(movies, year) {
+  //mirar ej 4
+  const newMovies = JSON.parse(JSON.stringify( movies));
+  let arrayByYear =  newMovies.map( obj => obj );
+  arrayByYear = arrayByYear.filter(elem => elem["year"] === year);
+  let scoresByYear = [];
+  let maxScore = [];
+  let bestFilm = [];
+  async function calcScoresByYear()  {arrayByYear.map( arr => scoresByYear.push(Object.values(arr["score"])) )}; 
+  async function calcMaxScore() {calcScoresByYear().then( maxScore = Math.max(...scoresByYear))};
+  calcMaxScore().then( bestFilm = bestFilm.push(arrayByYear.filter(elem => elem["score"] === maxScore)) );
+    let result = bestFilm;
   
+  console.log("EXERCICE 8 ->", result);
+  return result;
 }
 
 

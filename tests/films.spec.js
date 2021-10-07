@@ -11,7 +11,7 @@ const {
 } = require('../src/films');
 
 // Exercise 1
-describe.only('Function "getAllDirectors"', () => {
+describe('Function "getAllDirectors"', () => {
   it('should be declared', () => {
     expect(typeof getAllDirectors).toBe('function');
   });
@@ -51,7 +51,7 @@ describe.only('Function "getAllDirectors"', () => {
 });
 
 // Exercise 2
-describe.only('Function "getMoviesFromDirector"', () => {
+describe('Function "getMoviesFromDirector"', () => {
   it('should be declared', () => {
     expect(typeof getMoviesFromDirector).toBe('function');
   });
@@ -98,7 +98,7 @@ describe.only('Function "getMoviesFromDirector"', () => {
 });
 
 // Exercise 3
-describe.only('Function "moviesAverageOfDirector"', () => {
+describe('Function "moviesAverageOfDirector"', () => {
   it('should be declared', () => {
     expect(typeof moviesAverageOfDirector).toBe('function');
   });
@@ -139,7 +139,7 @@ describe.only('Function "moviesAverageOfDirector"', () => {
 });
 
 // Exercise 4
-describe.only('Function "orderAlphabetically"', () => {
+describe('Function "orderAlphabetically"', () => {
   it('should be declared', () => {
     expect(typeof orderAlphabetically).toBe('function');
   });
@@ -247,7 +247,7 @@ describe.only('Function "orderAlphabetically"', () => {
 });
 
 // Exercise 5
-describe.only('Function "orderByYear"', () => {
+describe('Function "orderByYear"', () => {
   it('should be declared', () => {
     expect(typeof orderByYear).toBe('function');
   });
@@ -287,7 +287,7 @@ describe.only('Function "orderByYear"', () => {
 });
 
 // Exercise 6
-describe.only('Function "moviesAverageByCategory"', () => {
+describe('Function "moviesAverageByCategory"', () => {
   it('should be declared', () => {
     expect(typeof moviesAverageByCategory).toBe('function');
   });
@@ -355,7 +355,7 @@ describe.only('Function "moviesAverageByCategory"', () => {
 });
 
 // Exercise 7
-describe.only('Function "hoursToMinutes"', () => {
+describe('Function "hoursToMinutes"', () => {
   it('should be declared', () => {
     expect(typeof hoursToMinutes).toBe('function');
   });
