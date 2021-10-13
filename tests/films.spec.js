@@ -11,7 +11,7 @@ const {
 } = require('../src/films');
 
 // Exercise 1
-describe.only('Function "getAllDirectors"', () => {
+describe('Function "getAllDirectors"', () => {
   it('should be declared', () => {
     expect(typeof getAllDirectors).toBe('function');
   });
@@ -51,7 +51,7 @@ describe.only('Function "getAllDirectors"', () => {
 });
 
 // Exercise 2
-describe.only('Function "getMoviesFromDirector"', () => {
+describe('Function "getMoviesFromDirector"', () => {
   it('should be declared', () => {
     expect(typeof getMoviesFromDirector).toBe('function');
   });
